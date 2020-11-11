@@ -1,0 +1,69 @@
+
+{% extends 'basic/new/product-base.html' %}
+{% block product %}
+
+<div class='back'>
+<br><br><br><br>
+    <div class='container mt-5 '>
+        <div class="jumbotron jumpS">
+        <h1 class="display-4">K.S. Fastners</h1>
+        <p class="lead"><strong>Meeting Commitments. Since the beginning.... </strong> </p>
+        <hr class="my-4">
+        <p>Dealing with all kinds of Garment Accessories. </p>
+            {% for i in pdf %}
+            <a class="btn btn-outline-primary btn" href = "{{i.file.url}}" download="Samplepdf   " role="button">Download Our Catalog?</a>
+            {% endfor%}
+        </div>
+        </div>
+<br>
+<hr/>
+<br>
+        <div class='container mb-5'>
+            <center><strong><h2><u>Our Beginning</u></h2></strong></center>
+            <div class='row m-3'>
+                    <p id='starting'>PSK INDUSTRIES started its manufacturing processes in the year 2012. Before 2012 we were a trading firm catering both the domestic customers as well as export houses dealing in all types of garment accessories. Lack of quality production, mismanagement of deliveries and customer services in the industry encouraged us to setup our own manufacturing plant of die casting.
+                    </p>
+                
+            </div>
+        </div>
+<br>
+{% include 'basic/clients.html' %}
+<br>
+<hr>
+<br>
+        <div class='container'>
+            <center><strong><h2><u>MAKING INDIA STRONG</u></h2></strong></center>
+            <div class='row m-3'>
+                    <p id='starting'>We continuously strive to be better in our business. We as a team try to contribute to our society as much as we can by developing complicated products that have not yet been made in our markets. Our strategy is to make our country less dependent on imports from China and in order to do that we try to make such complicated products which are not usually made in our domestic market which eventually leads to more employment here in our country and reduce the cash outflows from our country. </p>               
+            </div>
+        </div>
+</div>
+    <div class='row'>
+    <img src="https://i.pinimg.com/originals/9c/8f/bf/9c8fbf02afd00ff80009c8d4534e47c3.png" class="img-fluid buttonsImage" alt="Responsive image">
+    </div>
+
+        <style>
+            .jumpS{
+                border: 1px solid black;
+                box-shadow: ;
+            }
+        #starting {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+        }
+
+        .buttonsImage{
+            max-height:500px;
+            width: 100%;%
+        }
+
+        .back{   
+            background-image: url(https://i.pinimg.com/originals/78/9d/10/789d108ae0ba9a93266170031c109189.jpg);
+            background-repeat:repeat; 
+        }
+
+        #starting::first-letter{
+            font-size: 200%;
+        }
+        </style>
+{% endblock product %}

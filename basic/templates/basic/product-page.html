@@ -1,0 +1,146 @@
+
+{% extends 'basic/new/product-base.html' %}
+
+ {% block product %}
+ 
+  <main class="mt-5 pt-4 sample1">
+  <br/>
+ <br/>
+ <br/>
+ <br/>
+ <hr/>
+    <div class="container dark-grey-text mt-5">
+
+      <!--Grid row-->
+      <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+          <img src="{{obj.picture1.url}}" class="img-fluid" alt="">
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+          <!--Content-->
+          <div class="p-4">
+
+          <p class="lead font-weight-bold"></p>
+          <div class="section-title">
+          <h2 id='ourPolicy'>{{obj.name}}</h2>
+          <p></p>
+        </div>
+          
+          <br/>
+            <p class="lead font-weight-bold"></p>
+            <h4 class="my-4 h4"><u>Description</u></h4>
+
+            <p id='niche'>{{obj.desc}}</p>
+
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+               Contact Us?
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Contact Details</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <i class="fab fa-whatsapp-square fa-lg p-2"></i> 9650975736<br>
+                      <i class="fa fa-envelope-open fa-lg p-2"></i> Ksfastners2001@gmail.com<br>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary mr-2" data-dismiss="modal">Close</button>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc52v_Kr_PP4k513ikku6PifFoGwxhLEfHyCaujqYu1Z1TC9g/viewform?embedded=true" class="get-started-btn btn-lg ml-auto ">Request a Call back?</a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <a href="https://docs.google.com/forms/d/e/1FAIpQLSc52v_Kr_PP4k513ikku6PifFoGwxhLEfHyCaujqYu1Z1TC9g/viewform?embedded=true" class="get-started-btn btn-lg ml-auto">Request a Call back?</a>
+          </div>
+          <!--Content-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+      <hr>
+
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-6 text-center">
+
+          <h4 class="my-4 h4"><u>Additional information</u></h4>
+ </div> 
+<!--          <p id='niche'>{{obj.desc}}</p>
+-->
+       
+        <!--Grid column-->
+
+      </div>
+      <style>
+      #niche:first-letter{
+        font-size: 200%;
+      }
+      #niche{
+        font-size: 21px;
+      }
+      </style>
+     
+      <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4">
+
+          <img src="{{obj.picture3.url}}" class="img-fluid" alt="">
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <img src="{{obj.picture2.url}}" class="img-fluid" alt="">
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <img src="{{obj.picture4.url}}" class="img-fluid" alt="">
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </div>
+  </main>
+  <style>
+  .sample1{
+   background-image: url(https://i.pinimg.com/originals/78/9d/10/789d108ae0ba9a93266170031c109189.jpg);
+  background-repeat:repeat; 
+  }
+  #ourPolicy{
+    font-size: 25px;
+  }
+  </style>
+{% endblock %}
+
+

@@ -1,0 +1,34 @@
+{% extends 'basic/new/product-base.html'%}
+{%load static%}
+
+{% block product%}
+
+    <div class='empty mb-5 pb-5'>
+
+
+    </div>
+    
+    <div class='container mb-5'>
+        <div class='row d-flex justify-content-center'>
+            <h1> STANDARD 100 by OEKO-TEX® </h1>
+            <p class='subHeading d-flex justify-content-center my-2'>STANDARD 100 by OEKO-TEX® is one of the world's best-known labels for textiles tested for harmful substances. It stands for customer confidence and high product safety. Find out here what STANDARD 100 means and why it is worth checking for this label when buying textiles.</p>
+
+                <div class="col-sm-8 mt-5">
+                        <h2>What does the label mean?</h2>
+                        <p class='firstPara'> If a textile article carries the STANDARD 100 label, you can be certain that every component of this article, i.e. every thread, button and other accessories, has been tested for harmful substances and that the article therefore is harmless for human health. The test is conducted by our independent OEKO-TEX® partner institutes on the basis of our extensive OEKO-TEX® criteria catalog. In the test they take into account numerous regulated and non-regulated substances, which may be harmful to human health. In many cases the limit values for the STANDARD 100 go beyond national and international requirements. The criteria catalog is updated at least once a year and expanded with new scientific knowledge or statutory requirements. It is not easy for manufacturers and customers to keep an overview of the legal situation concerning harmful substances every day. Our experts from the OEKO-TEX® institutes do this for you.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="https://www.oeko-tex.com/fileadmin/_processed_/8/6/csm_Stofflabel_links_STD100_EN_hell_verkleinert_f3e091b546.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+        </div>
+    </div>
+    <style>
+        .empty{
+            height: 100px;
+        }    
+        .subHeading{
+            font-weight: 300;
+            font-size: 20px;
+        }
+    </style>
+    {% endblock product%}

@@ -1,0 +1,39 @@
+
+{% extends 'basic/new/product-base.html' %}
+{% block product %}
+
+    
+    <div class='policy'>
+    </div>
+
+        <div class='container my-5 py-4 sample1'>
+
+        <div class="section-title">
+          <h2 id='ourPolicy'>Our Policy</h2>
+          <p></p>
+        </div>
+            {% for i in policy  %}
+                
+                    <div class="media">
+                    <i class="fas fa-arrow-right mr-2"> </i>
+                        <div class="media-body">
+                            <h5 class="mt-0">{{i.name}}</h5>
+                        </div>
+                    </div>
+                    <br/>
+            {% endfor %}
+        </div>
+    <style>
+    #ourPolicy{
+        font-size: 25px;
+        color: black;
+    }
+    .policy{
+        height: 100px;
+    }
+    .sample1{
+        background-image: url(https://i.pinimg.com/originals/78/9d/10/789d108ae0ba9a93266170031c109189.jpg);
+        background-repeat:repeat; 
+        }
+    </style>
+{% endblock product %}

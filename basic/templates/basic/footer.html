@@ -1,0 +1,66 @@
+<!-- ======= Footer ======= -->
+{% load static %}
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>KS Fastner</h3>
+              <p>
+             <i class="fas fa-map-marker-alt fa-lg p-1"></i>  987/9 Govind Puri, <br>
+               New Delhi -110019 <br><br>
+                
+                <i class="fab fa-whatsapp-square fa-lg p-2"></i> 9650975736<br>
+                <i class="fa fa-envelope-open fa-lg p-2"></i> Ksfastners2001@gmail.com<br>
+              </p>
+            
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fas fa-home"> </i> <a href="{% url 'home'%}"> &nbsp; &nbsp;Home</a></li>
+              <li><i class="fas fa-address-card"> </i> <a href="{% url 'home'%}"> &nbsp;&nbsp;About us</a></li>
+              <li><i class="fas fa-phone-volume"> </i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSc52v_Kr_PP4k513ikku6PifFoGwxhLEfHyCaujqYu1Z1TC9g/viewform?embedded=true"> &nbsp;&nbsp;Request A Call Back?</a></li>
+              <li><i class="fab fa-intercom"> </i> <a href="{% url 'policy'%}"> &nbsp;&nbsp;Customer Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            
+            <img src ="{% static 'img/ksLogo.png' %}" class='ksLogo'/>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <style>
+      .ksLogo{
+        max-height: 300px;
+        max-width: 300px;
+        height: 200px;
+        width: 300px;
+      }
+      .fa{
+        size: 7px;
+      }
+      
+    </style>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>K.S.Fastners<br><br/><span>Designed By <i>Rachit Saxena </i></span> <br/><i class="fas fa-at"></i> rachit.saxena42@gmail.com</strong>&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-phone"></i> +91-8178073305
+      </div>
+      <div class="credits">
+        
+      </div>
+    </div>
+  </footer><!-- End Footer -->
