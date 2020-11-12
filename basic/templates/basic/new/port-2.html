@@ -1,0 +1,76 @@
+{% extends 'basic/new/product-base.html' %}
+
+{% block product %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class='container-fluid my-4'>
+
+ <div class="section-title my-3">
+          <h2>Welcome</h2>
+          <p>Have a look. Take a minute...</p>
+        </div>
+  
+
+
+
+<div class='container'>
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Select A Product</p>
+        </div>
+
+    <div class='container category mb-5'>
+    <div class='row allign-center'>
+
+       
+        {% for i in product%}
+        
+             
+            <a type="button" href="{% url 'product' i.id%}" class="btn btn-outline-danger mx-3 "  title="<em>Tooltip</em> <u>with</u> <b>HTML</b>"> {{i}}  </a>
+            
+        {% endfor %}
+    </div>
+    
+</div>
+
+        <div class="row portfolio-container">
+      {% for i in product %}
+      <section id="{{i}}" >
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{{i.picture1.url}}" class="img-fluid port" alt="">
+              <div class="portfolio-info">
+                <h4>{{i.name}}</h4>
+                
+                <div class="portfolio-links">
+                    <a href="{{i.picture1.url}}" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="far fa-image"></i></a>
+                    <a href="{% url 'product' i.id%}"><i class="fas fa-file-medical-alt"></i></a>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+          </section>
+{% endfor %}
+          <style>
+            .port{
+              height: 300px;
+              width: 100%;
+            }
+          </style>
+          </div>
+        
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+</div>
+
+{% endblock product %}
