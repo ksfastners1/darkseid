@@ -25,6 +25,7 @@ class Policy (models.Model):
 
 class Pdf(models.Model):
     file = models.FileField(null=True)
+    
 
 
     

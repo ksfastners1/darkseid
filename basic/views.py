@@ -90,9 +90,11 @@ def policy(request):
     return render(request , 'basic/new/policy.html' , params)
 
 def about(request):
-    pdf = Pdf.objects.all()
+    pdf1 = Pdf.objects.get(id=3)
+    pdf2 = Pdf.objects.get(id=4)
     params  = {
-        'pdf' : pdf
+        'pdf' : pdf1,
+        'pdf2' : pdf2,
     }
     return render(request , 'basic/new/about-page.html' , params)
 
