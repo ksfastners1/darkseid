@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'p)_vql_+!q2p_xroibdwnoka8w9)&khr!ljgj1x6s$6+0xa8(9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['ksfastners.herokuapp.com' , '127.0.0.1' , 'ksmain-2.herokuapp.com']
 
 
@@ -121,15 +121,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 
-EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'rachit.saxena42@gmail.com'
-EMAIL_HOST_PASSWORD = 'suspectshot69*'
 
-AWS_ACCESS_KEY_ID = "AKIARZJ7XDEUP6KP6KX6"
-AWS_SECRET_ACCESS_KEY = "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"
+
+AWS_ACCESS_KEY_ID = "AKIARZJ7XDEUBIAO46NX"
+AWS_SECRET_ACCESS_KEY = "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"
 AWS_STORAGE_BUCKET_NAME = 'graphics-buckets'
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 AWS_S3_OBJECT_PARAMETERS = {
